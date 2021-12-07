@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       roomId = '<%=roomId%>';
     </script>
@@ -32,7 +32,7 @@
       const roomId = '<%= roomId%>';
     </script>
     <script src="/socket.io/socket.io.js"></script>
-    <script src="/script/room.js"></script>
+    <script src="./script/room.js"></script>
     <title>room</title>
   </head>
   <body>
@@ -89,7 +89,7 @@
             />
             <label for="name" class="form__label">NAME</label>
           </div>
-          <i class="material-icons" id="same-name">send </i>
+          <i class="material-icons" id="same-name">send</i>
         </div>
       </div>
     </div>

@@ -29,6 +29,13 @@ $(function () {
       }
     }
   });
+  $("#same-name").on('click',function(e){
+    myName = $('#enter-name').val();
+    if (myName != '') {
+      $('.popup').addClass('hidden');
+      createRoom();
+    }
+  })
   function createRoom() {
     const socket = io('/');
     const videoGrid = document.getElementById('video-grid');
