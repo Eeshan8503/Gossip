@@ -2,7 +2,7 @@ const dotenv = require('dotenv');
 dotenv.config({ path: './config.env' });
 const opn = require('opn');
 const server = require('./app');
-
+const PORT=process.env.PORT || 443;
 server.listen(443, () => {
   console.log(`Listening to port ${ 443}`);
 });
