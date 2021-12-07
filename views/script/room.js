@@ -158,7 +158,7 @@ $(function () {
     /* <---------NAV-BAR---------> */
     $('.exit').click(() => {
       socket.emit('dis', roomId, myPeerId, myName);
-      window.location.replace('http://localhost:3000');
+      window.location.replace('https://gossiip.herokuapp.com/');
     });
 
     $('.mic').click(() => {
